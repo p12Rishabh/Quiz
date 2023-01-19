@@ -1,0 +1,25 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "Quiz assignment, to be submitted in 'ACM- League of Code'",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* -o dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run usemin"
+  },
+  "author": "Chirag Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.4.0",
+    "rimraf": "^2.6.3",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
+}
